@@ -1,5 +1,8 @@
 package com.example.springboot.tesr;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
+import com.example.springboot.pojo.User;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -17,12 +20,15 @@ public class TestDemo {
     @Test
     public void test() {
 
-        String str = "sfsd,fs,d";
-       String[] s =  str.split(",");
+       final User user = (User) new TypeReference<User>(){}.getType();
 
-        List<String> list = Arrays.asList(s);
-      for(int i = 0;i<list.size();++i) {
-          System.out.println(list.get(i));
-      }
+        String planJson = "plan";
+            User plan = JSON.parseObject(planJson, new TypeReference<User>() {
+            });
+
+
+
+        }
     }
-}
+
+
