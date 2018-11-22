@@ -1,8 +1,11 @@
-com\example\springboot\config\PageConfig.class
 com\example\springboot\SpringbootApplication.class
-com\example\springboot\mapper\UserMapper.class
+com\example\springboot\mapper\StudentMapper.class
 com\example\springboot\pojo\PageBean.class
 com\example\springboot\request\ReqUser.class
+com\example\springboot\pojo\StudentEntity.class
+com\example\springboot\service\StudentService.class
+com\example\springboot\mapper\UserMapper.class
+com\example\springboot\controller\StudentController.class
 com\example\springboot\controller\Hello.class
 com\example\springboot\controller\UserController.class
 com\example\springboot\service\UserService.class

@@ -40,14 +40,20 @@ public class UserService {
      * @return
      */
     public PageInfo findPageUser(PageBean pageBean){
-        PageHelper.startPage(pageBean.getPageSize(),pageBean.getPageNo());
+        //排序,分页
+        //String order = "sex desc";
+        PageHelper.startPage(pageBean.getPageNo(),pageBean.getPageSize());
         List<UserEntity> list = userMapper.findPageUser();
         Integer count = userMapper.findUserCount();
-        PageInfo<UserEntity> page = new PageInfo<>();
-        page.setPageNum(count);
-        page.setPageSize(pageBean.getPageSize());
-        page.setSize(pageBean.getPageNo());
-        page.setList(list);
+        PageInfo<UserEntity> page = new PageInfo<>(list);
+
+
+
+
+//        page.setPageNum(count);
+//        page.setPageSize(pageBean.getPageSize());
+//        page.setSize(pageBean.getPageNo());
+//        page.setList(list);
         return page;
     }
 

@@ -50,7 +50,7 @@ public interface UserMapper {
      * 全查询
      * @return
      */
-    @Select("select * from t_user")
+    @Select("select * from t_user ORDER BY sex DESC")
     public List<UserEntity> findPageUser();
 
     @Select( "select count(*) from t_user" )
