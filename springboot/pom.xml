@@ -26,6 +26,27 @@
 
     <dependencies>
 
+        <!-- MySql数据库驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!-- springboot的mybatis -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+        <!-- 添加分布插件的包pagehelper -->
+        <!--分页插件 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
         <!--添加fastjson依赖-->
         <dependency>
             <groupId>com.alibaba</groupId>
