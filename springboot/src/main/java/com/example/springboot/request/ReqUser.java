@@ -2,6 +2,8 @@ package com.example.springboot.request;
 
 import com.alibaba.fastjson.JSON;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 /**
@@ -12,8 +14,10 @@ import java.io.Serializable;
  */
 public class ReqUser implements Serializable {
 
+    @NotNull(message = "id不能为空")
     private Long id;
 
+    @NotBlank
     private String name;
 
     private Integer sex;
