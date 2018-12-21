@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  *
  * @Author by   wukainian,
  * @Date on     2018/11/22.
- */
+        */
 @Component
 public interface StudentMapper {
 

@@ -3,7 +3,12 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.springboot.mapper.StudentMapper">
-    <select id="findById" resultType="com.example.springboot.pojo.StudentEntity">
+<select id="findById" resultType="com.example.springboot.pojo.StudentEntity">
         select * from t_student where id = #{id}
-    </select>
+
+</select>
+
+
+
+
 </mapper>
